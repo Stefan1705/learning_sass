@@ -1,0 +1,4 @@
+$about-bg: $white;
+.about-section{
+    @include sectionStyle($about-bg, 30px, 30px);
+}

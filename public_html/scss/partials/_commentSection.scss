@@ -1,0 +1,5 @@
+$comment-bg: $white;
+
+.comment-section{
+   @include sectionStyle($comment-bg, 30px, 30px);
+}

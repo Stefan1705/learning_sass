@@ -1,0 +1,22 @@
+
+
+@mixin sectionStyle($bg, $pt, $pb){
+    background-color: $bg;
+    padding: $pt 0 $pb;
+
+}
+
+@mixin radius($radius){
+
+
+    @if($is-rounded){
+        border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -moz-border-radius:$radius;
+    }@else{
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius:0px;
+    }
+
+}

@@ -1,0 +1,56 @@
+$header-bg: $purple;
+$header-link-color: $white;
+$header-link-hover-color: $dark;
+
+
+/*Header starts*/
+header{
+/*    background-color: $header-bg;
+    padding: 30px 0px;*/
+
+@include sectionStyle($header-bg, 30px, 30px);
+
+
+    .branding{
+        a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: $header-link-color;
+        }// a
+    }// brandning
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+        a{
+            display: block;
+            color: $header-link-color;
+            padding: 5px 10px;
+            text-align: center;
+            text-transform: uppercase;
+
+            &:hover, &.active{
+                color: $header-link-hover-color;
+            }
+        }
+
+    }
+}// header
+
+
+@media(min-width:992px){
+    header{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
+

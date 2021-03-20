@@ -1,0 +1,44 @@
+$bg-default: $blue;
+$text-default: $white;
+$bg-hot: $red;
+$bg-awesome: $purple;
+$bg-warning: $orange;
+$bg-dark: $dark;
+
+%btn{
+    display: inline-block;
+    padding: 10px 20px;
+    @include radius(5px);
+    border: none;
+}
+
+.btn-default{
+    @extend %btn;
+    
+    background-color: $bg-default;
+    color: $text-default;
+}
+
+.btn-hot{
+    @extend %btn;
+    background-color: $bg-hot;
+    color: $text-default;
+}
+
+.btn-dark{
+    @extend %btn;
+    background-color: $bg-dark;
+    color: $text-default;
+}
+
+.btn-warning{
+    @extend %btn;
+    background-color: $bg-warning;
+    color: $text-default;
+}
+
+.btn-awesome{
+    @extend %btn;
+    background-color: $bg-awesome;
+    color: $text-default;
+}

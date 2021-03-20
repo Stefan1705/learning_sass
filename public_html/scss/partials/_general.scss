@@ -1,0 +1,33 @@
+$body-bg: $light-gray;
+$body-color: $dark;
+
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}

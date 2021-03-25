@@ -1,7 +1,9 @@
 $body-bg: $light-gray;
 $body-color: $dark;
 
-
+$default-font: $rubik;
+$heading-font: $josefin;
+$heading-color: $purple;
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -16,6 +18,14 @@ body{
     font-size: 1.6rem;
     background-color: $body-bg;
     color: $body-color;
+    font-family: $default-font;
+    font-weight: $font-regular;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $heading-font; 
+    font-weight: $font-bold;
+    color: $heading-color;
 }
 
 img{

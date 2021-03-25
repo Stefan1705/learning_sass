@@ -11,6 +11,7 @@ p{
 // darken(color, procenat);
 
 // lighten(color, procenat);*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Rubik:wght@400;700&display=swap");
 .btn-default, .btn-hot, .btn-dark, .btn-awesome, .btn-warning {
   display: inline-block;
   padding: 10px 20px;
@@ -125,6 +126,31 @@ p{
         background-color: darken($bg-fancy, 10%);
     }
 }*/
+.table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  border-spacing: none;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.table thead {
+  background-color: #d41798;
+}
+
+.table thead th, .table thead td {
+  color: #fff;
+}
+
+/*    font-family: 'Josefin Sans', sans-serif;
+
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Rubik', sans-serif;*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -478,6 +504,14 @@ body {
   font-size: 1.6rem;
   background-color: #eee;
   color: #000;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #d41798;
 }
 
 img {
@@ -562,18 +596,56 @@ header ul a:hover, header ul a.active {
   padding: 30px 0 30px;
 }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 19-Mar-2021, 18:05:32
-    Author     : stefa
-*/
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.comment-list li .comment-body {
+  padding-left: 30px;
+}
+
+.comment-list li h2 {
+  margin-top: 0;
+}
+
+#courses {
+  background-color: transparent;
+  padding: 50px 0 50px;
+}
+
 .contact-section {
-  background-color: #fff;
-  padding: 30px 0;
+  background-color: transparent;
+  padding: 70px 0 70px;
+  text-align: center;
+}
+
+.contact-section form {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.contact-section form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-section form .form-group .form-control {
+  display: block;
+  width: 100%;
+  padding: 0 5px;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
 }
 
 footer {

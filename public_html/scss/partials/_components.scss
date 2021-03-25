@@ -6,6 +6,8 @@ $bg-warning: $yellow;
 $bg-dark: $dark;
 $bg-fancy: aqua;
 
+$table-head-bg: $purple;
+
 $buttons : (
 'default' : $blue,
 'hot' : $red,
@@ -97,3 +99,21 @@ $buttons : (
 }*/
 // 1. Ime klase
 // 2. Ime boje
+
+.table{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    border-spacing: none;
+    width: 100%;
+    td,th{
+        border: 1px solid #000;
+        padding: 5px;
+    }
+    
+    thead{
+        background-color: $table-head-bg;
+        th,td{
+            color: colorYiq($table-head-bg);
+        }
+    }
+}

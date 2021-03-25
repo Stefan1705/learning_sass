@@ -18,5 +18,35 @@
         -webkit-border-radius: 0px;
         -moz-border-radius:0px;
     }
-
 }
+
+@function colorYiq($color){
+
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+    
+    $yiq : $r*0.299 + $g*0.587 + $b*0.114;
+
+    @if($yiq < 150){
+        @return $white;
+    }@else{
+        @return $dark;
+    }
+    
+}
+
+/*
+$customColor: #ffaabb;
+//rgb()
+
+// rgba(color, opacity)
+
+p{
+    color: rgba($customColor, 0.4);
+}
+
+// darken(color, procenat);
+
+// lighten(color, procenat);*/
+

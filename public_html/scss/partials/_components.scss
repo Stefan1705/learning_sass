@@ -2,8 +2,17 @@ $bg-default: $blue;
 $text-default: $white;
 $bg-hot: $red;
 $bg-awesome: $purple;
-$bg-warning: $orange;
+$bg-warning: $yellow;
 $bg-dark: $dark;
+$bg-fancy: aqua;
+
+$buttons : (
+'default' : $blue,
+'hot' : $red,
+'dark' : $dark,
+'awesome' : $purple,
+'warning' : $yellow
+);
 
 %btn{
     display: inline-block;
@@ -12,33 +21,79 @@ $bg-dark: $dark;
     border: none;
 }
 
-.btn-default{
+@each $key, $value in $buttons {
+    
+    .btn-#{$key}{
+        @extend %btn;
+        background-color: $value;
+        color: colorYiq($value);
+        
+        &:hover{
+            background-color: darken($value,10%);
+        }
+    }
+    
+}
+
+/*.btn-default{
     @extend %btn;
     
     background-color: $bg-default;
-    color: $text-default;
+    color: colorYiq($bg-default);
+    
+    &:hover{
+        background-color: darken($bg-default, 10%);
+    }
 }
 
 .btn-hot{
     @extend %btn;
     background-color: $bg-hot;
-    color: $text-default;
+    color: colorYiq($bg-hot);
+    
+    &:hover{
+        background-color: darken($bg-hot, 10%);
+    }
 }
 
 .btn-dark{
     @extend %btn;
-    background-color: $bg-dark;
-    color: $text-default;
+    background-color: $light-gray;
+    color: colorYiq($light-gray);
+    
+    &:hover{
+        background-color: lighten($light-gray, 50%);
+    }
 }
 
 .btn-warning{
     @extend %btn;
     background-color: $bg-warning;
-    color: $text-default;
+    color: colorYiq($bg-warning);
+    
+    &:hover{
+        background-color: darken($bg-warning, 10%);
+    }
 }
 
 .btn-awesome{
     @extend %btn;
     background-color: $bg-awesome;
-    color: $text-default;
+    color: colorYiq($bg-awesome);
+    
+    &:hover{
+        background-color: darken($bg-awesome, 10%);
+    }
 }
+
+.btn-fancy{
+    @extend %btn;
+    background-color: $bg-fancy;
+    color: colorYiq($bg-fancy);
+    
+    &:hover{
+        background-color: darken($bg-fancy, 10%);
+    }
+}*/
+// 1. Ime klase
+// 2. Ime boje
